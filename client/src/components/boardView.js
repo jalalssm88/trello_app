@@ -11,7 +11,6 @@ export default class BoardView extends Component {
             task_arr : []
         }
     }
-
     componentDidMount(){
         console.log('view board detail', this.props.location.state)
         const current_id = this.props.location.state.board_id
@@ -24,15 +23,12 @@ export default class BoardView extends Component {
         })
     }
     change = (e) => {
-        
         this.setState({
             task:e.target.value
         })
     }
     sub = (e) => {
         e.preventDefault();
-
-
     }
     render() {
         console.log('board detail state', this.state.board_detail)
@@ -47,14 +43,12 @@ export default class BoardView extends Component {
                         <Link to="#" className="item">{board_view.category}</Link> 
                     </div>
                 }
-
                 <div className="ui four column grid">
                     <div className="column">
                         <input type="text" className="ui input" /><br />
                         <button>add</button>
 
                     </div>
-                    
                 </div>
             </div>
         )

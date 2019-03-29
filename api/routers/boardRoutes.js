@@ -8,7 +8,6 @@ router.post('/', (req, res)=>{
         team:req.body.team,
         category:req.body.category,
         board_color:req.body.board_color
-
     })
     board.save().then(result=>{
         console.log('submit data', result)
@@ -20,7 +19,6 @@ router.post('/', (req, res)=>{
         data:board
     })
 })
-
 
 router.get('/', (req, res)=>{
     Board.find().exec().then(data=>{
@@ -43,7 +41,6 @@ router.get('/', (req, res)=>{
     
 // })
 
-
 router.get('/:productID', (req, res, next)=> {
     const product_id = req.params.productID;
     Board.findById(product_id).exec().then(doc =>{
@@ -54,6 +51,5 @@ router.get('/:productID', (req, res, next)=> {
         res.status(505).json({error:error})
     }) 
 })
-
 
 module.exports = router;

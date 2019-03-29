@@ -26,8 +26,6 @@ export default class Boards extends Component {
         })
     }
 
-    
-
     // deleteHandler = (e) =>{
     //     console.log('eeeeeeeeee', e)
     //     Axios.delete(`/create/${e}`).then(res=>{
@@ -51,7 +49,6 @@ export default class Boards extends Component {
                                     <div className="header">Boards</div>
                                 </div>
                             </div>
-                            
                             <div className="item">
                                 <i className="home icon"></i>
                                 <div className="content">

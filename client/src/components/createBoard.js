@@ -14,7 +14,6 @@ export default class Createboard extends Component {
 
         }
     }
-
     getColor = (e) =>{
         // e.preventDefault();
         console.log('eeeee', e)
@@ -23,7 +22,6 @@ export default class Createboard extends Component {
             color_chose_status:true
         })
     }
-
     componentDidMount(){
         Axios.get('/teams').then(res=>{
             console.log('console from create team view', res)
@@ -53,15 +51,12 @@ export default class Createboard extends Component {
             console.log(error);
         });
             window.location.pathname = '/profiles';
-
         this.setState({
             name:'',
             team:'',
             category:''
         })
     }
-
-   
 
     render() {
         console.log('teamoptions', this.state.teamOptions)
