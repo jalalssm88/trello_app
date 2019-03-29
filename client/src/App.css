@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.board_items{
+  background: green;
+  height: 120px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-radius: 15px;
+  padding-top: 22px;
+}
+.board_items a{
+  color: white;
+}
+
+
+.boards_column{
+padding-left: 50px !important;
+padding-right: 50px !important;
+}
+
+.menu_loader{
+  position: absolute !important;
+  top: 90px !important;
+  left: 680px !important;
+}
+
+.main_menu{
+  background-color: #026aa7 !important;
+  height: 45px !important;
+}
+
+.detail_menu{
+  margin-top: -20px !important;
+}
+
+.start_header{
+  font-size: 48px;
+  color: white;
+  margin-top: 35px !important;
+}
+
+.start_para{
+  font-size: 23px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.login_register{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.errorList{
+  color: red
+}
+
+.board_colors{
+  background: red;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 70px;
+  font-size: 20px;
+  color: white
+}
+
+.colorss {
+  height: 40px !important;
+  margin-top: 20px;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
